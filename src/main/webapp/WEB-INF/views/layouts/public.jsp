@@ -7,14 +7,17 @@
 <c:set var="img" value="${context}/resources/img" />
 <c:set var="css" value="${context}/resources/css" />
 <c:set var="js" value="${context}/resources/js"/>
-<!doctype html>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <html lang="en">
 <head>
 	<title><tiles:getAsString name="title"/></title>
 	<link rel="stylesheet" href="${css}/application.css" type="text/css"/>
 </head>
 <body>
-
 	<header>
 		<div id="pub_header">
 			<tiles:insertAttribute name="header" /> 	
@@ -31,8 +34,4 @@
 		 </div>
 	</footer>
 </body>
-<script src="${js}/application.js"></script>
-<script>
-	app.init('${pageContext.request.contextPath}');
-</script>
 </html>
