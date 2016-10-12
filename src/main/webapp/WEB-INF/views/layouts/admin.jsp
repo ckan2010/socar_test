@@ -7,38 +7,38 @@
 <c:set var="img" value="${context}/resources/img" />
 <c:set var="css" value="${context}/resources/css" />
 <c:set var="js" value="${context}/resources/js"/>
-<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css"> -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
-<html lang="en">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<%-- <html lang="en">
 <head>
    <title><tiles:getAsString name="title"/></title>
    <link rel="stylesheet" href="${css}/application.css" type="text/css"/>
-</head>
+</head> --%>
 <body>
-   <header id="admin_header" style="border:3px solid red">
+   <header id="admin_header">
          <tiles:insertAttribute name="header" />    
    </header>
-   <nav id="admin_nav"style="border:3px solid red">
+   <%-- <nav id="admin_nav">
        <tiles:insertAttribute name="nav" />    
-      
-   <section>
-      <article id="admin_article"style="border:3px solid red">
+   </nav>  --%>  
+   <!-- <section id="admin_section"> -->
+      <article id="admin_article1">
          <tiles:insertAttribute name="body" /> 
       </article>
-   </section>
+   <!-- </section> -->
    <section>
-      <article id="admin_quick"style="border:3px solid red">
+      <article id="admin_quick">
          <tiles:insertAttribute name="quick" /> 
       </article>
    </section>
-   </nav>
+   
    <footer>
-       <div id="admin_footer"style="border:3px solid red">
+       <div id="admin_footer">
           <tiles:insertAttribute name="footer" /> 
        </div>
    </footer>
 </body>
-</html>
+<!-- </html> -->

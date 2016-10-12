@@ -23,7 +23,7 @@
         <definition name="admin" template="/WEB-INF/views/layouts/admin.jsp">
       	<put-attribute name="title" value="쏘카 admin"></put-attribute>
         <put-attribute name="header" value="/WEB-INF/views/admin/header.jsp" />
-        <put-attribute name="nav" value="/WEB-INF/views/admin/nav.jsp" />
+        <!-- <put-attribute name="nav" value="/WEB-INF/views/admin/nav.jsp" /> -->
         <put-attribute name="body" value=""></put-attribute>
         <put-attribute name="quick" value="/WEB-INF/views/public/quick.jsp"/>
         <put-attribute name="footer" value="/WEB-INF/views/public/footer.jsp" />
