@@ -10,6 +10,8 @@
 <div id= "customer" class="notice1">
 <div id="container">
 		<div id="content">
+			<h2><img src="${img}/h2.gif" alt="고객센터 쏘카에 대한 궁금증 해결을 도와드립니다."></h2>
+			<p class="callCenter"><img src="${img}/btn_callcenter.gif" alt="콜센터 안내"></p>
 			<div class="lnb">
 				<!-- lnb -->
 <ul class="lnb">

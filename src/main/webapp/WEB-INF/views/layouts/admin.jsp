@@ -7,10 +7,10 @@
 <c:set var="img" value="${context}/resources/img" />
 <c:set var="css" value="${context}/resources/css" />
 <c:set var="js" value="${context}/resources/js"/>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+ --><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <%-- <html lang="en">
 <head>
@@ -25,9 +25,9 @@
        <tiles:insertAttribute name="nav" />    
    </nav>  --%>  
    <!-- <section id="admin_section"> -->
-      <article id="admin_article1">
+      <!-- <article id="admin_article1"> -->
          <tiles:insertAttribute name="body" /> 
-      </article>
+      <!-- </article> -->
    <!-- </section> -->
    <section>
       <article id="admin_quick">

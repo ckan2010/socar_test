@@ -10,7 +10,10 @@
 <div id= "customer" class="notice1">
 <div id="container">
 		<div id="content">
-		<div class="box lnb">
+			<h2><img src="${img}/h2.gif" alt="고객센터 쏘카에 대한 궁금증 해결을 도와드립니다."></h2>
+			<p class="callCenter"><img src="${img}/btn_callcenter.gif" alt="콜센터 안내"></p>
+			<div class="box lnb">
+				<!-- lnb -->
 <ul class="lnb">
 <li><a href="${context}/admin/notice" title="공지사항" class="lnb1">공지사항</a></li>
 <li><a href="${context}/admin/faq_0" title="자주묻는 질문" class="lnb2">자주묻는 질문</a></li>
@@ -25,9 +28,8 @@
 						<!-- <form name="search" method="post" action=""> -->
 							<fieldset>
 								<input type="text" class="input">
-								<input id="btn_search" type="image" src="${img}/btn_notice_search.gif" alt="검색">
-								<a href="${context}/admin/notice_write">
-								<input id="btn_notice_write" type="image" src="${img}/notice_write.gif" alt="등록">
+								<input id="btn_search" type="image" src="${img}/btn_notice_search.gif" alt="검색">								
+						</a>
 							</fieldset>
 						<!-- </form> -->
 					</div>
@@ -104,6 +106,8 @@
 							
 						</tbody>
 						</table>
+					
+					
 					<div class="paginate">
 						&nbsp;<strong>1</strong>&nbsp;<a href="">2</a>&nbsp;<a href="">3</a>&nbsp;<a href="">4</a>
 						&nbsp;<a href="">5</a>&nbsp;<a href="">6</a>&nbsp;<a href="">7</a>&nbsp;<a href="">8</a>

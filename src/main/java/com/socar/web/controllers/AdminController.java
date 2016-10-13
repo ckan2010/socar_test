@@ -14,6 +14,12 @@ public class AdminController {
 		logger.info("AdminController ! goMain()");
 		return "admin:admin/notice.tiles";
 	}
+	@RequestMapping("/notice_write")
+	public String goNoticeWrite(){
+		logger.info("AdminController ! gogoNoticeWrite()");
+		return "admin:admin/notice_write.tiles";
+	}
+	
 	@RequestMapping("/faq_0")
 	public String gofaq_0(){
 		logger.info("AdminController ! gofaq_0()");
