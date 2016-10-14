@@ -388,7 +388,7 @@ div.lnb .section .group{margin-top:50px;}
 
 /* table rows */
 table.rows{width:100%; border-top:2px solid #d3d3d3;}
-table.rows th{padding:16px 0; width:65px; text-align:left; vertical-align:top; border-bottom:1px solid #ededed;}
+table.rows th{padding:16px 0; width:80px; text-align:left; vertical-align:top; border-bottom:1px solid #ededed;}
 table.rows td{padding:10px 0; border-bottom:1px solid #ededed;}
 table.rows td label{margin-right:15px;}
 table.rows td label.no_margin{margin-right: 0px;}
@@ -552,7 +552,7 @@ ol, ul{list-style:none;}
 .notice1 .banner li{float:left; display:inline; margin-left:7px;}
 .notice1 .banner li.first{margin:0;}
 /* lnb */
-ul.lnb li a{background:url('../img/lnb1.png?v=20160809') no-repeat;}
+ul.lnb li a{background:url('../img/lnb.png?v=20160809') no-repeat;}
 ul.lnb li a.lnb1{background-position:0 0;}
 ul.lnb li a.lnb2{background-position:0 -106px;}
 ul.lnb li a.lnb3{background-position:0 -212px;}
@@ -632,3 +632,7 @@ input[type="file"] {
     height: 33px;
 }
 #btn_notice_write{position:relative;}
+#btn_answer{position:relative;margin-left: 93%;}
+#btn_car_regist{position:relative;margin-left: 93%;}
+#btn_coupon_regist{position:relative;margin-left: 93%;}
+#car_thumb{width:85px; height:85px;}

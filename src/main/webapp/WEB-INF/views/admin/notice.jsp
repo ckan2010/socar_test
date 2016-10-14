@@ -13,11 +13,11 @@
 		<div class="box lnb">
 <ul class="lnb">
 <li><a href="${context}/admin/notice" title="공지사항" class="lnb1">공지사항</a></li>
-<li><a href="${context}/admin/faq_0" title="자주묻는 질문" class="lnb2">자주묻는 질문</a></li>
+<li><a href="${context}/admin/faq_0" title="묻의&답변" class="lnb2">묻의&답변</a></li>
 
-	<li><a href="${context}/admin/inquiry" title="1:1 문의하기" class="lnb3">1:1 문의하기</a></li>
+	<li><a href="${context}/admin/inquiry" title="차량관리" class="lnb3">차량관리</a></li>
 
-<li><a href="${context}/admin/voc" title="고객의견 반영절차" class="lnb4">고객의견 반영절차</a></li>
+<li><a href="${context}/admin/voc" title="쿠폰관리" class="lnb4">쿠폰관리</a></li>
 </ul>
 <div class="section1">
 					<h3><img src="${img}/h3_notice.gif" alt="공지사항"></h3>
@@ -28,6 +28,7 @@
 								<input id="btn_search" type="image" src="${img}/btn_notice_search.gif" alt="검색">
 								<a href="${context}/admin/notice_write">
 								<input id="btn_notice_write" type="image" src="${img}/notice_write.gif" alt="등록">
+								</a>
 							</fieldset>
 						<!-- </form> -->
 					</div>

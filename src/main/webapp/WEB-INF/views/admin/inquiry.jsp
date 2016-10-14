@@ -10,63 +10,181 @@
 <div id= "customer" class="inquiry">
 <div id="container">
 		<div id="content">
-			<h2><img src="${img}/h2.gif" alt="고객센터 쏘카에 대한 궁금증 해결을 도와드립니다."></h2>
-			<p class="callCenter"><img src="${img}/btn_callcenter.gif" alt="콜센터 안내"></p>
 			<div class="box lnb">
 				<!-- lnb -->
 <ul class="lnb">
 <li><a href="${context}/admin/notice" title="공지사항" class="lnb1">공지사항</a></li>
-<li><a href="${context}/admin/faq_0" title="자주묻는 질문" class="lnb2">자주묻는 질문</a></li>
+<li><a href="${context}/admin/faq_0" title="Q&A" class="lnb2">문의&답변</a></li>
 
-	<li><a href="${context}/admin/inquiry" title="1:1 문의하기" class="lnb3">1:1 문의하기</a></li>
+	<li><a href="${context}/admin/inquiry" title="차량관리" class="lnb3">차량관리</a></li>
 
-<li><a href="${context}/admin/voc" title="고객의견 반영절차" class="lnb4">고객의견 반영절차</a></li>
+<li><a href="${context}/admin/voc" title="쿠폰관리" class="lnb4">쿠폰관리</a></li>
 </ul>
 <div class="section1">
-					<h3><img src="${img}/h3_inquiry.gif" alt="1:1 문의하기"></h3>
-					<form name="inquiry" method="post" action="" accept-charset="utf-8" enctype="multipart/form-data">
-						<fieldset>
-						<input type="hidden" name="auth_token" value="fc11e5a1541403123da91ff8596dd4253c2b72bcdkhne">
-						<input type="hidden" name="return_url" value="">
-						<input type="hidden" name="channel" value="www">
-							<table cellspacing="0" class="rows">
-							<tbody><tr>
-								<th><img src="${img}/inquiry_txt2.gif" alt="문의분류"></th>
-								<td>
-									<select style="width:165px" name="category" id="category">
-										<option value="A">예약/결제문의</option>
-										<option value="B">가입문의</option>
-										<option value="C">차량이용/사고</option>
-										<option value="D">불편접수/건의</option>
-										<option value="E">프로모션/쿠폰</option>
-										<option value="H">법인/단체</option>
-										<option value="F">탈퇴</option>
-										<option value="I">쏘파라치</option>
-										<option value="G">기타</option>
-										
-									</select>
-								</td>
-							</tr>
+					<h3><img src="${img}/car_mag.jpg" alt="차량관리"><a href="${context}/admin/car_regist">
+								<input id="btn_car_regist" type="image" src="${img}/notice_write.gif" alt="등록" >
+					</h3>					
+					
+					<table cellspacing="0" summary="차량관리" class="cols">
+							<colgroup><col width="84"><col width="137"><col width="200"><col width="84"><col width="200"><col width="200"><col width="84"><col></colgroup>
+							<thead>
 							<tr>
-								<th><img src="${img}/inquiry_txt3.gif" alt="제목 / 내용"></th>
-								<td>
-									<input id="title" type="text" name="title" class="input" value="" style="width:400px">
-									<textarea id="contents" cols="" name="contents" rows="15" class="textarea" style="width:585px"></textarea>
-								</td>
+								<th>차량번호</th>
+								<th>쏘카존</th>
+								<th>차량</th>
+								<th>유종</th>
+								<th>옵션</th>
+								<th>대여요금</th>
+								<th>주행요금</th>
+								<th>&nbsp;</th>
 							</tr>
-							<tr>
-								<th><img src="${img}/inquiry_txt4.gif" alt="파일첨부"></th>
-								<td>
-									<input type="file" class="inquiry_input" name="userfile" value="">
-									<span class="tip ml10">이미지 파일은 jpg, png, gif 만 첨부가능합니다.</span>
-								</td>
-							</tr>
-							</tbody></table>
-							<p class="centerBtn">
-								<input type="submit" value="" class="btn_submit">
-							</p>
-						</fieldset>
-					</form>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="subj"><a href="${context}/admin/car_update">11가1234</a></td>
+									<td>서울대입구역 6번출구(토마스빌)</td>
+									<td><img src="http://socdnw.speedgabia.com/template/asset/images/car_image/car22.png" id="car_thumb">아반떼AD</td>
+									<td>휘발유</td>
+									<td>오토변속기어, 내비게이션, 블랙박스</td>
+									<td>2,620원</td>
+									<td>170원/km</td>
+								</tr>
+								<tr>
+									<td class="subj"><a href="${context}/admin/car_update">11너1234</a></td>
+									<td>서울역 12번출구(트윈시티남산)</td>
+									<td><img src="http://socdnw.speedgabia.com/template/asset/images/car_image/car28.png" id="car_thumb">티볼리 뽈뽀리</td>
+									<td>경유</td>
+									<td>오토변속기어, 내비게이션, 블랙박스</td>
+									<td>3,320원</td>
+									<td>160원/km</td>
+								</tr>
+								<tr>
+									<td class="subj"><a href="${context}/admin/car_update">11다1244</a></td>
+									<td>신촌기차역 광장</td>
+									<td><img src="http://socdnw.speedgabia.com/template/asset/images/car_image/car15.png" id="car_thumb">엑센트  엑센트리올</td>
+									<td>휘발유</td>
+									<td>오토변속기어, 내비게이션, 블랙박스</td>
+									<td>2,390원</td>
+									<td>170원/km</td>
+								</tr>
+								<tr>
+									<td class="subj"><a href="${context}/admin/car_update">12라2233</a></td>
+									<td>증산시장 앞</td>
+								<td><img src="http://socdnw.speedgabia.com/template/asset/images/car_image/car15.png" id="car_thumb">엑센트  크레센도</td>
+									<td>휘발유</td>
+									<td>오토변속기어, 내비게이션, 블랙박스</td>
+									<td>2,390원</td>
+									<td>170원/km</td>
+								</tr>
+								<tr>
+									<td class="subj"><a href="${context}/admin/car_update">12마3333</a></td>
+									<td>증산시장 앞</td>
+								<td><img src="http://socdnw.speedgabia.com/template/asset/images/car_image/car1_new2.png" id="car_thumb">레이 다우니</td>
+									<td>휘발유</td>
+									<td>오토변속기어, 내비게이션, 블랙박스</td>
+									<td>2,130원</td>
+									<td>170원/km</td>
+								</tr>
+								<tr>
+									<td class="subj"><a href="${context}/admin/car_update">15카8989</a></td>
+									<td>증산시장 앞</td>
+								<td><img src="http://socdnw.speedgabia.com/template/asset/images/car_image/car22.png" id="car_thumb">아반떼AD 계반떼</td>
+									<td>휘발유</td>
+									<td>오토변속기어, 내비게이션, 블랙박스</td>
+									<td>2,130원</td>
+									<td>170원/km</td>
+								</tr>
+								<tr>
+									<td class="subj"><a href="${context}/admin/car_update">15카8989</a></td>
+									<td>증산시장 앞</td>
+								<td><img src="http://socdnw.speedgabia.com/template/asset/images/car_image/car22.png" id="car_thumb">아반떼AD 계반떼</td>
+									<td>휘발유</td>
+									<td>오토변속기어, 내비게이션, 블랙박스</td>
+									<td>2,130원</td>
+									<td>170원/km</td>
+								</tr>
+								<tr>
+									<td class="subj"><a href="${context}/admin/car_update">15카8989</a></td>
+									<td>증산시장 앞</td>
+								<td><img src="http://socdnw.speedgabia.com/template/asset/images/car_image/car22.png" id="car_thumb">아반떼AD 계반떼</td>
+									<td>휘발유</td>
+									<td>오토변속기어, 내비게이션, 블랙박스</td>
+									<td>2,130원</td>
+									<td>170원/km</td>
+								</tr>
+								<tr>
+									<td class="subj"><a href="${context}/admin/car_update">15카8989</a></td>
+									<td>증산시장 앞</td>
+								<td><img src="http://socdnw.speedgabia.com/template/asset/images/car_image/car22.png" id="car_thumb">아반떼AD 계반떼</td>
+									<td>휘발유</td>
+									<td>오토변속기어, 내비게이션, 블랙박스</td>
+									<td>2,130원</td>
+									<td>170원/km</td>
+								</tr>
+								<tr>
+									<td class="subj"><a href="${context}/admin/car_update">15카8989</a></td>
+									<td>증산시장 앞</td>
+								<td><img src="http://socdnw.speedgabia.com/template/asset/images/car_image/car22.png" id="car_thumb">아반떼AD 계반떼</td>
+									<td>휘발유</td>
+									<td>오토변속기어, 내비게이션, 블랙박스</td>
+									<td>2,130원</td>
+									<td>170원/km</td>
+								</tr>
+								<tr>
+									<td class="subj"><a href="${context}/admin/car_update">15카8989</a></td>
+									<td>증산시장 앞</td>
+								<td><img src="http://socdnw.speedgabia.com/template/asset/images/car_image/car22.png" id="car_thumb">아반떼AD 계반떼</td>
+									<td>휘발유</td>
+									<td>오토변속기어, 내비게이션, 블랙박스</td>
+									<td>2,130원</td>
+									<td>170원/km</td>
+								</tr>
+								<tr>
+									<td class="subj"><a href="${context}/admin/car_update">15카8989</a></td>
+									<td>증산시장 앞</td>
+								<td><img src="http://socdnw.speedgabia.com/template/asset/images/car_image/car22.png" id="car_thumb">아반떼AD 계반떼</td>
+									<td>휘발유</td>
+									<td>오토변속기어, 내비게이션, 블랙박스</td>
+									<td>2,130원</td>
+									<td>170원/km</td>
+								</tr>
+								<tr>
+									<td class="subj"><a href="${context}/admin/car_update">15카8989</a></td>
+									<td>증산시장 앞</td>
+								<td><img src="http://socdnw.speedgabia.com/template/asset/images/car_image/car22.png" id="car_thumb">아반떼AD 계반떼</td>
+									<td>휘발유</td>
+									<td>오토변속기어, 내비게이션, 블랙박스</td>
+									<td>2,130원</td>
+									<td>170원/km</td>
+								</tr>
+								<tr>
+									<td class="subj"><a href="${context}/admin/car_update">15카8989</a></td>
+									<td>증산시장 앞</td>
+								<td><img src="http://socdnw.speedgabia.com/template/asset/images/car_image/car22.png" id="car_thumb">아반떼AD 계반떼</td>
+									<td>휘발유</td>
+									<td>오토변속기어, 내비게이션, 블랙박스</td>
+									<td>2,130원</td>
+									<td>170원/km</td>
+								</tr>
+								<tr>
+									<td class="subj"><a href="${context}/admin/car_update">15카8989</a></td>
+									<td>증산시장 앞</td>
+								<td><img src="http://socdnw.speedgabia.com/template/asset/images/car_image/car22.png" id="car_thumb">아반떼AD 계반떼</td>
+									<td>휘발유</td>
+									<td>오토변속기어, 내비게이션, 블랙박스</td>
+									<td>2,130원</td>
+									<td>170원/km</td>
+								</tr>
+							</tbody>
+							</table>
+											
+					<div class="paginate">
+						&nbsp;<strong>1</strong>&nbsp;<a href="">2</a>&nbsp;<a href="">3</a>&nbsp;<a href="">4</a>
+						&nbsp;<a href="">5</a>&nbsp;<a href="">6</a>&nbsp;<a href="">7</a>&nbsp;<a href="">8</a>
+						&nbsp;<a href="">9</a>&nbsp;<a href="">10</a>&nbsp;<a href="">11</a>
+						&nbsp;<a href="">&gt;</a>						
+						
+					</div>
 				</div>
 </div>
 </div>		
